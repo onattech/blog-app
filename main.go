@@ -15,6 +15,12 @@ func main() {
 		log.Fatalf("failed to connect database: %v", err)
 	}
 
+	// Auto-migrate models
+	err = db.AutoMigrate(&Article{}, &Comment{})
+	if err != nil {
+		log.Fatalf("failed to migrate database: %v", err)
+	}
+
 	// Simple HTTP server
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello, world!"))
