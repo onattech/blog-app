@@ -42,6 +42,7 @@ func main() {
 		Handler: r,
 	}
 
+	// Start server
 	log.Println("Server running on port 8080")
 	log.Fatal(server.ListenAndServe())
 }

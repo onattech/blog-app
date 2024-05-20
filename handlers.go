@@ -8,11 +8,6 @@ import (
 	"gorm.io/gorm"
 )
 
-// Response struct for error handling
-type Response struct {
-	Message string `json:"message"`
-}
-
 // Handler to list all articles
 func ListArticles(db *gorm.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
