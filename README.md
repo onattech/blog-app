@@ -17,7 +17,3 @@ This is a simple blog-like application built with Golang, using the `net/http` p
 -   **Soft Deletion**
     -   Soft delete support for comments.
 
-### Loom walk through
-
-1. https://www.loom.com/share/79c12559812e4fae96cbe2ec4954763c
-2. https://www.loom.com/share/c6a25e1cec4d407ba7ab894167e7aa8f
